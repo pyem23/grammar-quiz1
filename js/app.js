@@ -656,6 +656,9 @@ class GrammarQuizApp {
               <div class="card-body">
                 ${this.renderByStudentView()}
               </div>
+              <div style="margin-top: var(--spacing-lg); display: flex; gap: var(--spacing-md);">
+                <button onclick="app.showScreen('all-scores')" class="btn-outline">← Kembali</button>
+              </div>
             </div>
 
             <!-- View: By Topic -->
@@ -663,6 +666,9 @@ class GrammarQuizApp {
               <div class="card-header">🎯 Analisis Per Topik</div>
               <div class="card-body">
                 ${this.renderByTopicView()}
+              </div>
+              <div style="margin-top: var(--spacing-lg); display: flex; gap: var(--spacing-md);">
+                <button onclick="app.showScreen('all-scores')" class="btn-outline">← Kembali</button>
               </div>
             </div>
 
@@ -672,6 +678,9 @@ class GrammarQuizApp {
               <div class="card-body">
                 ${this.renderByClassView()}
               </div>
+              <div style="margin-top: var(--spacing-lg); display: flex; gap: var(--spacing-md);">
+                <button onclick="app.showScreen('all-scores')" class="btn-outline">← Kembali</button>
+              </div>
             </div>
 
             <!-- View: Statistics -->
@@ -679,6 +688,9 @@ class GrammarQuizApp {
               <div class="card-header">📈 Statistik Lengkap</div>
               <div class="card-body">
                 ${this.renderStatisticsView()}
+              </div>
+              <div style="margin-top: var(--spacing-lg); display: flex; gap: var(--spacing-md);">
+                <button onclick="app.showScreen('all-scores')" class="btn-outline">← Kembali</button>
               </div>
             </div>
           </div>
@@ -936,9 +948,32 @@ class GrammarQuizApp {
 
   showScreen(screen) {
     document.querySelectorAll('[id^="view-"]').forEach(el => el.style.display = 'none');
+    
+    // Re-render views before showing
+    if (screen === 'by-student') {
+      const byStudentDiv = document.getElementById('view-by-student');
+      byStudentDiv.querySelector('.card-body').innerHTML = this.renderByStudentView();
+    } else if (screen === 'by-topic') {
+      const byTopicDiv = document.getElementById('view-by-topic');
+      byTopicDiv.querySelector('.card-body').innerHTML = this.renderByTopicView();
+    } else if (screen === 'by-class') {
+      const byClassDiv = document.getElementById('view-by-class');
+      byClassDiv.querySelector('.card-body').innerHTML = this.renderByClassView();
+    } else if (screen === 'statistics') {
+      const statsDiv = document.getElementById('view-statistics');
+      statsDiv.querySelector('.card-body').innerHTML = this.renderStatisticsView();
+    } else if (screen === 'all-scores') {
+      const allScoresDiv = document.getElementById('view-all-scores');
+      allScoresDiv.querySelector('.card-body').innerHTML = this.renderAllScoresTable();
+    }
+    
     document.getElementById(`view-${screen}`).style.display = 'block';
+    
+    // Update active button
     document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    if (event && event.target) {
+      event.target.classList.add('active');
+    }
   }
 
   // ================================
@@ -1229,19 +1264,17 @@ class GrammarQuizApp {
 
 let app;
 
-// Handle both early and late loading
-function initializeGrammarQuizApp() {
-  if (window.quizData && window.quizData.topics) {
-    console.log('Initializing GrammarQuizApp');
+// Instantiate immediately when script loads
+try {
+  if (window.quizData && window.quizData.topics && window.quizData.topics.length > 0) {
+    console.log('✓ Initializing GrammarQuizApp with', window.quizData.topics.length, 'topics');
     app = new GrammarQuizApp();
   } else {
-    console.error('Quiz data not available yet');
-    setTimeout(initializeGrammarQuizApp, 100);
+    console.error('❌ ERROR: Quiz data not available or invalid');
+    console.log('window.quizData:', window.quizData);
+    document.getElementById('app').innerHTML = '<div style="padding: 40px; color: red; text-align: center; font-family: Arial;"><h2>❌ Error</h2><p>Quiz data not loaded properly</p><p style="font-size: 12px;">Check console (F12) for details</p></div>';
   }
-}
-
-if (document.readyState === 'loading') {
-  window.addEventListener('DOMContentLoaded', initializeGrammarQuizApp);
-} else {
-  initializeGrammarQuizApp();
+} catch (error) {
+  console.error('❌ ERROR initializing app:', error);
+  document.getElementById('app').innerHTML = '<div style="padding: 40px; color: red; text-align: center; font-family: Arial;"><h2>❌ Initialization Error</h2><p>' + error.message + '</p></div>';
 }
