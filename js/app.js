@@ -98,6 +98,14 @@ class GrammarQuizApp {
                   <optgroup label="Kelas X">
                     <option value="X-E1">Kelas X-E1</option>
                     <option value="X-E2">Kelas X-E2</option>
+                    <option value="X-E3">Kelas X-E3</option>
+                    <option value="X-E4">Kelas X-E4</option>
+                    <option value="X-E5">Kelas X-E5</option>
+                    <option value="X-E6">Kelas X-E6</option>
+                    <option value="X-E7">Kelas X-E7</option>
+                    <option value="X-E8">Kelas X-E8</option>
+                    <option value="X-E9">Kelas X-E9</option>
+                    <option value="X-E10">Kelas X-E10</option>
                   </optgroup>
                   <optgroup label="Kelas XI">
                     <option value="XI-F1">Kelas XI-F1</option>
@@ -110,6 +118,18 @@ class GrammarQuizApp {
                     <option value="XI-F8">Kelas XI-F8</option>
                     <option value="XI-F9">Kelas XI-F9</option>
                     <option value="XI-F10">Kelas XI-F10</option>
+                  </optgroup>
+                  <optgroup label="Kelas XII">
+                    <option value="XII-F1">Kelas XII-F1</option>
+                    <option value="XII-F2">Kelas XII-F2</option>
+                    <option value="XII-F3">Kelas XII-F3</option>
+                    <option value="XII-F4">Kelas XII-F4</option>
+                    <option value="XII-F5">Kelas XII-F5</option>
+                    <option value="XII-F6">Kelas XII-F6</option>
+                    <option value="XII-F7">Kelas XII-F7</option>
+                    <option value="XII-F8">Kelas XII-F8</option>
+                    <option value="XII-F9">Kelas XII-F9</option>
+                    <option value="XII-F10">Kelas XII-F10</option>
                   </optgroup>
                 </select>
               </div>
