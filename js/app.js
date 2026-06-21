@@ -879,6 +879,7 @@ class GrammarQuizApp {
     `;
   }
 
+  renderStatisticsView() {
     const totalScores = this.allScores.length;
     const passCount = this.allScores.filter(s => s.score >= 70).length;
     const failCount = totalScores - passCount;
