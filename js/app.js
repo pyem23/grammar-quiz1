@@ -48,6 +48,18 @@ class GrammarQuizApp {
       if (e.target.id === 'exportExcelBtn') this.exportToExcel();
       if (e.target.id === 'resetAllScoresBtn') this.resetAllScores();
       
+      // Reset per student
+      if (e.target.dataset.resetStudent) {
+        const studentName = e.target.dataset.resetStudent;
+        this.resetStudentScores(studentName);
+      }
+      
+      // Reset per class
+      if (e.target.dataset.resetClass) {
+        const className = e.target.dataset.resetClass;
+        this.resetClassScores(className);
+      }
+      
       // Navigation
       if (e.target.classList.contains('nav-btn')) {
         this.showScreen(e.target.dataset.screen);
@@ -590,6 +602,11 @@ class GrammarQuizApp {
                   </button>
                 </li>
                 <li>
+                  <button class="nav-btn" onclick="app.showScreen('by-class')">
+                    🏫 Per Kelas
+                  </button>
+                </li>
+                <li>
                   <button class="nav-btn" onclick="app.showScreen('statistics')">
                     📈 Statistik
                   </button>
@@ -646,6 +663,14 @@ class GrammarQuizApp {
               <div class="card-header">🎯 Analisis Per Topik</div>
               <div class="card-body">
                 ${this.renderByTopicView()}
+              </div>
+            </div>
+
+            <!-- View: By Class -->
+            <div id="view-by-class" class="card" style="display: none;">
+              <div class="card-header">🏫 Nilai Per Kelas</div>
+              <div class="card-body">
+                ${this.renderByClassView()}
               </div>
             </div>
 
@@ -729,9 +754,14 @@ class GrammarQuizApp {
                   <div style="font-weight: 600;">${name}</div>
                   <div style="color: var(--text-secondary); font-size: var(--font-size-sm);">${data.class}</div>
                 </div>
-                <div style="text-align: right;">
-                  <div style="font-size: 20px; font-weight: 700; color: var(--primary);">${avg}</div>
-                  <div style="color: var(--text-secondary); font-size: var(--font-size-sm);">Rata-rata</div>
+                <div style="text-align: right; display: flex; align-items: center; gap: var(--spacing-sm);">
+                  <div>
+                    <div style="font-size: 20px; font-weight: 700; color: var(--primary);">${avg}</div>
+                    <div style="color: var(--text-secondary); font-size: var(--font-size-sm);">Rata-rata</div>
+                  </div>
+                  <button class="btn-danger btn-sm" data-reset-student="${name}" style="padding: 6px 10px; font-size: 12px; white-space: nowrap;">
+                    🗑️ Hapus
+                  </button>
                 </div>
               </div>
               <div style="font-size: var(--font-size-sm); color: var(--text-secondary);">
@@ -791,7 +821,64 @@ class GrammarQuizApp {
     `;
   }
 
-  renderStatisticsView() {
+  renderByClassView() {
+    const classes = {};
+    this.allScores.forEach(score => {
+      if (!classes[score.studentClass]) {
+        classes[score.studentClass] = [];
+      }
+      classes[score.studentClass].push(score);
+    });
+
+    if (Object.keys(classes).length === 0) {
+      return '<p style="color: var(--text-secondary); text-align: center; padding: var(--spacing-lg);">Tidak ada data quiz</p>';
+    }
+
+    return `
+      <div style="display: grid; gap: var(--spacing-lg);">
+        ${Object.entries(classes).sort().map(([className, scores]) => {
+          const avg = (scores.reduce((sum, s) => sum + s.score, 0) / scores.length).toFixed(1);
+          const studentCount = new Set(scores.map(s => s.studentName)).size;
+          const passCount = scores.filter(s => s.score >= 70).length;
+          const passPercentage = ((passCount / scores.length) * 100).toFixed(1);
+          
+          return `
+            <div style="background: var(--light); padding: var(--spacing-md); border-radius: 6px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--spacing-md);">
+                <div>
+                  <div style="font-weight: 600; font-size: 16px;">${className}</div>
+                </div>
+                <div style="display: flex; align-items: center; gap: var(--spacing-sm);">
+                  <button class="btn-danger btn-sm" data-reset-class="${className}" style="padding: 6px 10px; font-size: 12px; white-space: nowrap;">
+                    🗑️ Hapus
+                  </button>
+                </div>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--spacing-md);">
+                <div>
+                  <div style="color: var(--text-secondary); font-size: var(--font-size-sm);">Jumlah Siswa</div>
+                  <div style="font-size: 18px; font-weight: 700; color: var(--primary);">${studentCount}</div>
+                </div>
+                <div>
+                  <div style="color: var(--text-secondary); font-size: var(--font-size-sm);">Total Quiz</div>
+                  <div style="font-size: 18px; font-weight: 700; color: var(--primary);">${scores.length}</div>
+                </div>
+                <div>
+                  <div style="color: var(--text-secondary); font-size: var(--font-size-sm);">Rata-rata</div>
+                  <div style="font-size: 18px; font-weight: 700; color: var(--primary);">${avg}</div>
+                </div>
+                <div>
+                  <div style="color: var(--text-secondary); font-size: var(--font-size-sm);">Lulus</div>
+                  <div style="font-size: 18px; font-weight: 700; color: var(--success);">${passPercentage}%</div>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+  }
+
     const totalScores = this.allScores.length;
     const passCount = this.allScores.filter(s => s.score >= 70).length;
     const failCount = totalScores - passCount;
@@ -933,6 +1020,106 @@ class GrammarQuizApp {
       this.saveScoresToStorage();
       document.getElementById('resetConfirmModal').remove();
       this.showAlert('✓ Semua data nilai telah dihapus', 'success');
+      setTimeout(() => {
+        this.showAdminDashboard();
+      }, 500);
+    });
+    
+    // Handle cancel
+    document.getElementById('resetConfirmNo').addEventListener('click', () => {
+      document.getElementById('resetConfirmModal').remove();
+    });
+    
+    // Close modal when clicking overlay
+    document.getElementById('resetConfirmModal').addEventListener('click', (e) => {
+      if (e.target.id === 'resetConfirmModal') {
+        document.getElementById('resetConfirmModal').remove();
+      }
+    });
+  }
+
+  resetStudentScores(studentName) {
+    // Create confirmation modal
+    const modalHTML = `
+      <div class="modal-overlay" id="resetConfirmModal">
+        <div class="modal-content">
+          <h2>⚠️ Konfirmasi Reset Data</h2>
+          <p style="color: #d32f2f; font-weight: bold; margin: 15px 0;">
+            Apakah Anda yakin ingin menghapus semua data nilai dari siswa: <strong>${studentName}</strong>?
+          </p>
+          <p style="color: #666; font-size: 14px;">
+            Tindakan ini TIDAK DAPAT DIBATALKAN!
+          </p>
+          <div class="modal-buttons">
+            <button id="resetConfirmYes" class="btn-danger" style="margin-right: 10px;">
+              Ya, Hapus Data Siswa
+            </button>
+            <button id="resetConfirmNo" class="btn-outline">
+              Batal
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+    
+    // Handle confirmation
+    document.getElementById('resetConfirmYes').addEventListener('click', () => {
+      this.allScores = this.allScores.filter(s => s.studentName !== studentName);
+      this.saveScoresToStorage();
+      document.getElementById('resetConfirmModal').remove();
+      this.showAlert(`✓ Data nilai ${studentName} telah dihapus`, 'success');
+      setTimeout(() => {
+        this.showAdminDashboard();
+      }, 500);
+    });
+    
+    // Handle cancel
+    document.getElementById('resetConfirmNo').addEventListener('click', () => {
+      document.getElementById('resetConfirmModal').remove();
+    });
+    
+    // Close modal when clicking overlay
+    document.getElementById('resetConfirmModal').addEventListener('click', (e) => {
+      if (e.target.id === 'resetConfirmModal') {
+        document.getElementById('resetConfirmModal').remove();
+      }
+    });
+  }
+
+  resetClassScores(className) {
+    // Create confirmation modal
+    const modalHTML = `
+      <div class="modal-overlay" id="resetConfirmModal">
+        <div class="modal-content">
+          <h2>⚠️ Konfirmasi Reset Data</h2>
+          <p style="color: #d32f2f; font-weight: bold; margin: 15px 0;">
+            Apakah Anda yakin ingin menghapus semua data nilai dari: <strong>${className}</strong>?
+          </p>
+          <p style="color: #666; font-size: 14px;">
+            Tindakan ini TIDAK DAPAT DIBATALKAN!
+          </p>
+          <div class="modal-buttons">
+            <button id="resetConfirmYes" class="btn-danger" style="margin-right: 10px;">
+              Ya, Hapus Data Kelas
+            </button>
+            <button id="resetConfirmNo" class="btn-outline">
+              Batal
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+    
+    // Handle confirmation
+    document.getElementById('resetConfirmYes').addEventListener('click', () => {
+      this.allScores = this.allScores.filter(s => s.studentClass !== className);
+      this.saveScoresToStorage();
+      document.getElementById('resetConfirmModal').remove();
+      this.showAlert(`✓ Data nilai ${className} telah dihapus`, 'success');
       setTimeout(() => {
         this.showAdminDashboard();
       }, 500);
