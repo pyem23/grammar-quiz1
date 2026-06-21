@@ -976,6 +976,19 @@ class GrammarQuizApp {
 // ================================
 
 let app;
-window.addEventListener('DOMContentLoaded', () => {
-  app = new GrammarQuizApp();
-});
+
+function initializeGrammarQuizApp() {
+  if (window.quizData && window.quizData.topics) {
+    console.log('Initializing GrammarQuizApp');
+    app = new GrammarQuizApp();
+  } else {
+    console.error('Quiz data not available yet');
+    setTimeout(initializeGrammarQuizApp, 100);
+  }
+}
+
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', initializeGrammarQuizApp);
+} else {
+  initializeGrammarQuizApp();
+}
