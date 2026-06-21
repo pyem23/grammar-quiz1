@@ -205,7 +205,7 @@ class GrammarQuizApp {
 
   showDashboard() {
     const app = document.getElementById('app');
-    const topics = quizData.topics;
+    const topics = window.quizData.topics;
 
     // Calculate stats
     const userStats = this.calculateUserStats();
@@ -330,7 +330,7 @@ class GrammarQuizApp {
   }
 
   showQuiz() {
-    const topic = quizData.topics.find(t => t.id === this.currentTopic);
+    const topic = window.quizData.topics.find(t => t.id === this.currentTopic);
     const question = topic.questions[this.currentQuestion];
     const progress = ((this.currentQuestion + 1) / topic.questions.length) * 100;
 
@@ -411,7 +411,7 @@ class GrammarQuizApp {
   }
 
   nextQuestion() {
-    const topic = quizData.topics.find(t => t.id === this.currentTopic);
+    const topic = window.quizData.topics.find(t => t.id === this.currentTopic);
     if (this.currentQuestion < topic.questions.length - 1) {
       this.currentQuestion++;
       this.showQuiz();
@@ -426,7 +426,7 @@ class GrammarQuizApp {
   }
 
   submitQuiz() {
-    const topic = quizData.topics.find(t => t.id === this.currentTopic);
+    const topic = window.quizData.topics.find(t => t.id === this.currentTopic);
     
     // Calculate score
     let correctCount = 0;
@@ -457,7 +457,7 @@ class GrammarQuizApp {
   }
 
   showResults(score, correctCount, totalQuestions, timeSpent) {
-    const topic = quizData.topics.find(t => t.id === this.currentTopic);
+    const topic = window.quizData.topics.find(t => t.id === this.currentTopic);
     const message = this.getScoreMessage(score);
     const emoji = this.getScoreEmoji(score);
 
@@ -592,7 +592,7 @@ class GrammarQuizApp {
                 <div class="stat-label">Rata-rata Nilai</div>
               </div>
               <div class="stat-card">
-                <div class="stat-value">${quizData.topics.length}</div>
+                <div class="stat-value">${window.quizData.topics.length}</div>
                 <div class="stat-label">Total Topik</div>
               </div>
             </div>
@@ -723,7 +723,7 @@ class GrammarQuizApp {
 
   renderByTopicView() {
     const topicStats = {};
-    quizData.topics.forEach(topic => {
+    window.quizData.topics.forEach(topic => {
       const topicScores = this.allScores.filter(s => s.topic === topic.id);
       topicStats[topic.id] = {
         title: topic.title,
