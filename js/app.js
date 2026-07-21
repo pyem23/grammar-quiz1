@@ -1509,7 +1509,7 @@ saveScore(scoreData) {
    
 sendToGoogleSheets(scoreData) {
   // GANTI INI dengan URL deployment Anda!
-  const googleSheetUrl = "https://script.google.com/macros/d/AKfycbwKHYdGfzvXYfDQq5Xxa6w061eSGO8_Fykl8lOGXv7zJFIFZldaRq4QhhHu3zwy3uIJ/userweb";
+  const googleSheetUrl = "https://script.google.com/macros/s/AKfycbyHV8S6txfWRj-ExHFbsNX3HJlWKNRlUyOi_vB2y5BBv1L4EfODW8aXASxFBIISrXE/exec";
   
   const payload = {
     ...scoreData,
