@@ -1505,12 +1505,39 @@ class GrammarQuizApp {
   }
 
   saveScoresToStorage() {
-    localStorage.setItem('grammarQuizScores', JSON.stringify(this.allScores));
+    localStorage.setItem('grammarQuizScores_level1', JSON.stringify(this.allScores));
   }
 
   loadScoresFromStorage() {
-    const data = localStorage.getItem('grammarQuizScores');
-    return data ? JSON.parse(data) : [];
+    // Try new level-specific key first
+    let data = localStorage.getItem('grammarQuizScores_level1');
+    
+    // Migration: if not found, check old shared key (one-time migration for existing Level 1 users)
+    if (!data) {
+      const oldData = localStorage.getItem('grammarQuizScores');
+      if (oldData) {
+        data = oldData;
+        // Save to new key immediately so we stop relying on the shared old key
+        localStorage.setItem('grammarQuizScores_level1', oldData);
+      }
+    }
+    
+    if (!data) return [];
+    
+    const parsed = JSON.parse(data);
+    
+    // Safety filter: only keep scores whose topic belongs to THIS level's quiz data
+    // This prevents data from other levels (which may share the old storage key)
+    // from ever being displayed, even if it somehow ends up in storage.
+    const validTopicIds = new Set(
+      (window.quizData && window.quizData.topics) 
+        ? window.quizData.topics.map(t => t.id) 
+        : []
+    );
+    
+    if (validTopicIds.size === 0) return parsed; // quizData not loaded yet, skip filter
+    
+    return parsed.filter(score => validTopicIds.has(score.topic));
   }
 
   getUserTopicScore(studentName, topicId) {
