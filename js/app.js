@@ -1499,11 +1499,36 @@ class GrammarQuizApp {
   // DATA MANAGEMENT
   // ================================
 
-  saveScore(scoreData) {
-    this.allScores.push(scoreData);
-    this.saveScoresToStorage();
-  }
-
+saveScore(scoreData) {
+  this.allScores.push(scoreData);
+  this.saveScoresToStorage();
+  
+  // Send to Google Sheets
+  this.sendToGoogleSheets(scoreData);
+}
+   
+sendToGoogleSheets(scoreData) {
+  // GANTI INI dengan URL deployment Anda!
+  const googleSheetUrl = "https://script.google.com/macros/s/AKfycbwKHYdGfzvXYfDQq5Xxa6w061eSGO8_Fykl8lOGXv7zJFIFZldaRq4QhhHu3zwy3uIJ/exec";
+  
+  const payload = {
+    ...scoreData,
+    level: "Level 1"  // Untuk bedakan dari level lain
+  };
+  
+  fetch(googleSheetUrl, {
+    method: 'POST',
+    body: JSON.stringify(payload)
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('✅ Data sent to Google Sheets:', data);
+  })
+  .catch(error => {
+    console.warn('⚠️ Google Sheets sync failed (data still saved locally):', error);
+    // Data tetap tersimpan di localStorage, so data aman
+  });
+}   
   saveScoresToStorage() {
     localStorage.setItem('grammarQuizScores_level1', JSON.stringify(this.allScores));
   }
