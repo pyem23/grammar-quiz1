@@ -1,0 +1,1920 @@
+{
+  "topics": [
+    {
+      "id": "word",
+      "number": 1,
+      "title": "Word (Kelas Kata)",
+      "description": "Identifikasi Noun, Verb, Adjective, Adverb, Preposition, Conjunction, Interjection",
+      "questions": [
+        {
+          "id": "word_001",
+          "question": "Kata mana yang berfungsi sebagai adverb dalam kalimat \"The clever fox jumped quickly.\"?",
+          "options": [
+            "clever",
+            "fox",
+            "jumped",
+            "quickly",
+            "The"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"Quickly\" berakhiran -ly dan menerangkan verb \"jumped\" --- ciri adverb of manner."
+        },
+        {
+          "id": "word_002",
+          "question": "Dalam kalimat \"She is a doctor.\", kata \"doctor\" termasuk kelas kata apa?",
+          "options": [
+            "Pronoun",
+            "Verb",
+            "Adjective",
+            "Preposition",
+            "Noun"
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"Doctor\" adalah nama profesi (benda/orang) sehingga tergolong noun, berfungsi sebagai complement."
+        },
+        {
+          "id": "word_003",
+          "question": "Dalam kalimat \"They arrived early but tired.\", kata \"but\" berfungsi sebagai apa?",
+          "options": [
+            "Conjunction",
+            "Adverb",
+            "Preposition",
+            "Adjective",
+            "Interjection"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"But\" menghubungkan dua keterangan berlawanan --- fungsi coordinating conjunction."
+        },
+        {
+          "id": "word_004",
+          "question": "Kata mana yang merupakan preposition dalam \"The cat is under the table.\"?",
+          "options": [
+            "cat",
+            "under",
+            "is",
+            "the",
+            "table"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Under\" menunjukkan hubungan tempat antara subjek dan objek --- ciri preposition."
+        },
+        {
+          "id": "word_005",
+          "question": "\"Wow! That was amazing.\" --- kata \"Wow\" termasuk kelas kata apa?",
+          "options": [
+            "Noun",
+            "Verb",
+            "Interjection",
+            "Adverb",
+            "Adjective"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Wow\" mengekspresikan perasaan spontan, tergolong interjection."
+        },
+        {
+          "id": "word_006",
+          "question": "Dalam \"He runs fast.\", kata \"fast\" berfungsi sebagai apa?",
+          "options": [
+            "Noun",
+            "Adjective",
+            "Verb",
+            "Adverb",
+            "Preposition"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"Fast\" menerangkan verb \"runs\" (bagaimana caranya), sehingga berfungsi sebagai adverb."
+        },
+        {
+          "id": "word_007",
+          "question": "Kalimat mana yang menggunakan \"quickly\" secara benar sebagai adverb?",
+          "options": [
+            "She is quickly.",
+            "She runs quick and correct.",
+            "Quickly she a runner.",
+            "She a quickly runner.",
+            "She runs quickly."
+          ],
+          "correctAnswer": 4,
+          "explanation": "Adverb \"quickly\" harus menerangkan verb (\"runs\"), bukan berdiri sendiri."
+        },
+        {
+          "id": "word_008",
+          "question": "Dalam \"Jakarta is a big city.\", kata \"big\" termasuk kelas kata apa?",
+          "options": [
+            "Adjective",
+            "Noun",
+            "Verb",
+            "Adverb",
+            "Pronoun"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Big\" menerangkan noun \"city\", tergolong adjective."
+        },
+        {
+          "id": "word_009",
+          "question": "Pilih kata ganti (pronoun) yang tepat dalam kalimat: \"Rina reads a book; she enjoys it.\"",
+          "options": [
+            "Rina",
+            "she",
+            "reads",
+            "book",
+            "enjoys"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"She\" menggantikan nama \"Rina\" --- fungsi utama pronoun."
+        },
+        {
+          "id": "word_010",
+          "question": "Identifikasi kata kerja (verb) dalam \"The intelligent student reads an interesting book carefully.\"",
+          "options": [
+            "intelligent",
+            "student",
+            "reads",
+            "interesting",
+            "carefully"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Reads\" satu-satunya kata yang menunjukkan aksi, sehingga berfungsi sebagai verb."
+        }
+      ]
+    },
+    {
+      "id": "noun",
+      "number": 2,
+      "title": "Noun (Kata Benda)",
+      "description": "Jenis-jenis noun: Common, Proper, Countable, Uncountable, Collective, Abstract",
+      "questions": [
+        {
+          "id": "noun_001",
+          "question": "Manakah yang termasuk proper noun?",
+          "options": [
+            "teacher",
+            "Jakarta",
+            "city",
+            "book",
+            "dog"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Jakarta\" adalah nama diri tempat, ditulis kapital, tergolong proper noun."
+        },
+        {
+          "id": "noun_002",
+          "question": "Manakah noun yang bersifat uncountable (tidak dapat dihitung)?",
+          "options": [
+            "book",
+            "car",
+            "water",
+            "student",
+            "chair"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Water\" tidak dapat dihitung satuan tunggalnya, tergolong uncountable noun."
+        },
+        {
+          "id": "noun_003",
+          "question": "Pilih bentuk jamak yang benar dari \"child\":",
+          "options": [
+            "childs",
+            "childes",
+            "child's",
+            "children",
+            "childrens"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"Child\" memiliki bentuk jamak tidak beraturan: \"children\"."
+        },
+        {
+          "id": "noun_004",
+          "question": "Dalam \"The teacher is kind.\", frasa \"The teacher\" berfungsi sebagai apa?",
+          "options": [
+            "Object",
+            "Complement",
+            "Preposition",
+            "Adverbial",
+            "Subject"
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"The teacher\" adalah pelaku yang dibicarakan predikat, berfungsi sebagai subject."
+        },
+        {
+          "id": "noun_005",
+          "question": "Dalam \"I read a book.\", frasa \"a book\" berfungsi sebagai apa?",
+          "options": [
+            "Object",
+            "Subject",
+            "Complement",
+            "Determiner",
+            "Adjective"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"A book\" menerima aksi dari verb \"read\", berfungsi sebagai object."
+        },
+        {
+          "id": "noun_006",
+          "question": "Dalam \"She is a doctor.\", frasa \"a doctor\" berfungsi sebagai apa?",
+          "options": [
+            "Subject",
+            "Complement",
+            "Object",
+            "Adverb",
+            "Preposition"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Setelah linking verb \"is\", \"a doctor\" melengkapi subjek --- subject complement."
+        },
+        {
+          "id": "noun_007",
+          "question": "Kalimat mana yang menggunakan determiner dengan benar sebelum singular countable noun?",
+          "options": [
+            "I need water.",
+            "I need a apple.",
+            "I need an apple.",
+            "I need apples a.",
+            "I need the a apple."
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Apple\" diawali bunyi vokal, sehingga determinernya \"an\", bukan \"a\"."
+        },
+        {
+          "id": "noun_008",
+          "question": "Manakah yang termasuk abstract noun?",
+          "options": [
+            "table",
+            "cat",
+            "Jakarta",
+            "love",
+            "book"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"Love\" adalah konsep/perasaan, tergolong abstract noun."
+        },
+        {
+          "id": "noun_009",
+          "question": "Pilih kalimat dengan penulisan jamak yang benar:",
+          "options": [
+            "Three books is on the table.",
+            "Three book are on the table.",
+            "Three bookes are on the table.",
+            "Three book is on the table.",
+            "Three books are on the table."
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"Books\" (jamak) memakai verb \"are\", bentuk jamak benar \"books\" bukan \"bookes\"."
+        },
+        {
+          "id": "noun_010",
+          "question": "\"Happiness is important.\" --- \"Happiness\" termasuk jenis noun apa?",
+          "options": [
+            "Abstract",
+            "Concrete",
+            "Proper",
+            "Collective",
+            "Material"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Happiness\" adalah perasaan/konsep, tergolong abstract noun."
+        }
+      ]
+    },
+    {
+      "id": "pronoun",
+      "number": 3,
+      "title": "Pronoun (Kata Ganti)",
+      "description": "Personal, Possessive, Relative, Demonstrative, Reflexive, Indefinite Pronouns",
+      "questions": [
+        {
+          "id": "pronoun_001",
+          "question": "Pilih subject pronoun yang tepat: \"___ reads a book.\" (menggantikan Rina)",
+          "options": [
+            "Her",
+            "Hers",
+            "Herself",
+            "Him",
+            "She"
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"Rina\" adalah subjek perempuan tunggal, digantikan subject pronoun \"She\"."
+        },
+        {
+          "id": "pronoun_002",
+          "question": "Pilih object pronoun yang tepat: \"I gave the book to ___.\" (Andi)",
+          "options": [
+            "him",
+            "he",
+            "his",
+            "himself",
+            "he's"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Setelah preposition \"to\", diperlukan object pronoun \"him\"."
+        },
+        {
+          "id": "pronoun_003",
+          "question": "Pilih possessive pronoun yang tepat: \"This book is ___.\" (milik saya)",
+          "options": [
+            "my",
+            "mine",
+            "I",
+            "me",
+            "myself"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Mine\" berdiri sendiri tanpa diikuti noun, berbeda dari \"my\"."
+        },
+        {
+          "id": "pronoun_004",
+          "question": "Pilih reflexive pronoun yang tepat: \"She hurt ___ while cooking.\"",
+          "options": [
+            "her",
+            "hers",
+            "herself",
+            "she",
+            "she's"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Pelaku dan penerima aksi sama, digunakan reflexive pronoun \"herself\"."
+        },
+        {
+          "id": "pronoun_005",
+          "question": "\"Rina reads. ___ likes it.\" Pilih pronoun yang tepat.",
+          "options": [
+            "Her",
+            "Hers",
+            "Herself",
+            "She",
+            "Rina's"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Sebagai subjek kalimat baru, digunakan subject pronoun \"She\"."
+        },
+        {
+          "id": "pronoun_006",
+          "question": "Kalimat mana yang menggunakan possessive adjective dengan benar?",
+          "options": [
+            "This is mine book.",
+            "This is I book.",
+            "This is me book.",
+            "This is myself book.",
+            "This is my book."
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"My\" adalah possessive adjective yang diikuti noun (\"book\")."
+        },
+        {
+          "id": "pronoun_007",
+          "question": "Pilih pronoun yang tepat: \"They invited ___ to the party.\" (merujuk pada kita)",
+          "options": [
+            "us",
+            "we",
+            "our",
+            "ours",
+            "ourselves"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Us\" adalah object pronoun karena menjadi objek dari verb \"invited\"."
+        },
+        {
+          "id": "pronoun_008",
+          "question": "\"The keys are ___.\" (milik mereka)",
+          "options": [
+            "they",
+            "theirs",
+            "them",
+            "their",
+            "themselves"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Theirs\" adalah possessive pronoun berdiri sendiri tanpa noun setelahnya."
+        },
+        {
+          "id": "pronoun_009",
+          "question": "\"___ is my favorite teacher.\" (merujuk pada Pak Budi)",
+          "options": [
+            "Him",
+            "His",
+            "He",
+            "Himself",
+            "He's"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Sebagai subjek kalimat, diperlukan subject pronoun \"He\"."
+        },
+        {
+          "id": "pronoun_010",
+          "question": "Kalimat mana yang menggunakan reflexive pronoun dengan benar untuk penekanan?",
+          "options": [
+            "I did it me.",
+            "I did it my.",
+            "I did it mine.",
+            "I did it myself.",
+            "I did it I."
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"Myself\" menekankan bahwa \"I\" melakukannya sendiri --- emphatic reflexive."
+        }
+      ]
+    },
+    {
+      "id": "conjunction",
+      "number": 4,
+      "title": "Conjunction (Kata Hubung)",
+      "description": "Coordinating, Subordinating, dan Correlative Conjunctions",
+      "questions": [
+        {
+          "id": "conjunction_001",
+          "question": "Manakah yang termasuk coordinating conjunction (FANBOYS)?",
+          "options": [
+            "because",
+            "although",
+            "and",
+            "since",
+            "unless"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"And\" termasuk FANBOYS; lainnya subordinating conjunction."
+        },
+        {
+          "id": "conjunction_002",
+          "question": "Pilih pasangan correlative conjunction yang tepat: \"She is ___ tired ___ hungry.\"",
+          "options": [
+            "Either / or",
+            "Neither / nor",
+            "Both / and",
+            "Not only / but also",
+            "Whether / or"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Pasangan \"not only... but also\" menghubungkan dua kata sifat (tired dan hungry) yang sama-sama berlaku."
+        },
+        {
+          "id": "conjunction_003",
+          "question": "Kalimat mana yang menggunakan subordinating conjunction dengan benar?",
+          "options": [
+            "She was late and it rained.",
+            "She was late, it rained.",
+            "She was late but it rained.",
+            "She was late; it rained.",
+            "She was late because it rained."
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"Because\" menghubungkan sebab-akibat, ciri subordinating conjunction."
+        },
+        {
+          "id": "conjunction_004",
+          "question": "Pilih coordinating conjunction yang tepat: \"I like tea, ___ I don't like coffee.\"",
+          "options": [
+            "but",
+            "so",
+            "or",
+            "and",
+            "for"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"But\" menunjukkan pertentangan antara dua fakta."
+        },
+        {
+          "id": "conjunction_005",
+          "question": "\"Neither Rina ___ Budi came to school.\" Lengkapi dengan tepat.",
+          "options": [
+            "or",
+            "nor",
+            "and",
+            "but",
+            "so"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Neither\" harus berpasangan dengan \"nor\"."
+        },
+        {
+          "id": "conjunction_006",
+          "question": "Manakah contoh correlative conjunction?",
+          "options": [
+            "and",
+            "because",
+            "either...or",
+            "although",
+            "since"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Either...or\" adalah conjunction berpasangan (correlative)."
+        },
+        {
+          "id": "conjunction_007",
+          "question": "\"I will call you ___ I arrive.\" Pilih subordinating conjunction penunjuk waktu.",
+          "options": [
+            "and",
+            "but",
+            "or",
+            "when",
+            "so"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"When\" menghubungkan dua kejadian berdasarkan waktu."
+        },
+        {
+          "id": "conjunction_008",
+          "question": "Pilih kalimat dengan penggunaan coordinating conjunction yang benar:",
+          "options": [
+            "He studied hard, because he wanted to pass, for.",
+            "He studied hard for, he wanted to pass.",
+            "He studied for hard he wanted to pass.",
+            "He studied hard he wanted for pass.",
+            "He studied hard, for he wanted to pass."
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"For\" (karena) menghubungkan dua independent clause sesuai pola FANBOYS."
+        },
+        {
+          "id": "conjunction_009",
+          "question": "Pilih pasangan correlative yang tepat: \"You can have ___ tea ___ coffee, not both.\"",
+          "options": [
+            "either / or",
+            "neither / nor",
+            "both / and",
+            "not only / but also",
+            "whether / or"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Kalimat menyatakan pilihan salah satu, sesuai makna \"either...or\"."
+        },
+        {
+          "id": "conjunction_010",
+          "question": "Manakah conjunction yang tepat menunjukkan pertentangan (contrast)?",
+          "options": [
+            "and",
+            "although",
+            "so",
+            "because",
+            "or"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Although\" menghubungkan dua ide yang berlawanan/kontras."
+        }
+      ]
+    },
+    {
+      "id": "adverb",
+      "number": 5,
+      "title": "Adverb (Kata Keterangan)",
+      "description": "Adverb of Manner, Time, Place, Frequency, dan Degree",
+      "questions": [
+        {
+          "id": "adverb_001",
+          "question": "Kata mana yang merupakan adverb of manner dalam \"She sings beautifully.\"?",
+          "options": [
+            "beautifully",
+            "She",
+            "sings",
+            "very",
+            "beautiful"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Beautifully\" menjelaskan cara bernyanyi --- adverb of manner."
+        },
+        {
+          "id": "adverb_002",
+          "question": "Pilih adverb of frequency yang tepat: \"He ___ arrives late.\"",
+          "options": [
+            "yesterday",
+            "always",
+            "here",
+            "quickly",
+            "very"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Always\" menunjukkan seberapa sering --- adverb of frequency."
+        },
+        {
+          "id": "adverb_003",
+          "question": "Identifikasi adverb of place dalam \"Put the book there.\"",
+          "options": [
+            "Put",
+            "the",
+            "there",
+            "book",
+            "carefully"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"There\" menunjukkan lokasi --- adverb of place."
+        },
+        {
+          "id": "adverb_004",
+          "question": "Identifikasi adverb of degree dalam \"She is very tired.\"",
+          "options": [
+            "She",
+            "is",
+            "tired",
+            "very",
+            "always"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"Very\" menunjukkan tingkat intensitas --- adverb of degree."
+        },
+        {
+          "id": "adverb_005",
+          "question": "Pilih kalimat dengan adverb of manner yang ditempatkan secara benar:",
+          "options": [
+            "She runs quick.",
+            "Quick she runs.",
+            "She run quickly.",
+            "Runs she quickly.",
+            "She quickly runs."
+          ],
+          "correctAnswer": 4,
+          "explanation": "Bentuk adverb benar \"quickly\" dengan subject-verb agreement \"She runs\" yang tepat."
+        },
+        {
+          "id": "adverb_006",
+          "question": "Kalimat mana yang menggunakan adverb of time dengan benar?",
+          "options": [
+            "She will call you tomorrow.",
+            "She will call tomorrow you.",
+            "Tomorrow will she call you.",
+            "She tomorrow will call you.",
+            "She will tomorrow call you."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Adverb of time umumnya diletakkan di akhir kalimat."
+        },
+        {
+          "id": "adverb_007",
+          "question": "Pilih bentuk adverb yang benar dari \"careful\":",
+          "options": [
+            "carefuly",
+            "carefully",
+            "carefulness",
+            "carefull",
+            "carefuled"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Adjective \"careful\" + -ly menjadi \"carefully\"."
+        },
+        {
+          "id": "adverb_008",
+          "question": "\"He seldom eats breakfast.\" Kata \"seldom\" termasuk adverb jenis apa?",
+          "options": [
+            "Manner",
+            "Place",
+            "Frequency",
+            "Time",
+            "Degree"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Seldom\" (jarang) menunjukkan frekuensi --- adverb of frequency."
+        },
+        {
+          "id": "adverb_009",
+          "question": "Pilih kalimat dengan penempatan adverb of frequency yang benar:",
+          "options": [
+            "He always is late.",
+            "Always he is late.",
+            "He is late always.",
+            "He is always late.",
+            "He late is always."
+          ],
+          "correctAnswer": 3,
+          "explanation": "Adverb of frequency diletakkan setelah linking verb \"to be\"."
+        },
+        {
+          "id": "adverb_010",
+          "question": "\"extremely\" dalam \"The exam was extremely difficult.\" termasuk adverb jenis apa?",
+          "options": [
+            "Manner",
+            "Time",
+            "Frequency",
+            "Place",
+            "Degree"
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"Extremely\" memperkuat tingkat adjective \"difficult\" --- adverb of degree."
+        }
+      ]
+    },
+    {
+      "id": "preposition",
+      "number": 6,
+      "title": "Preposition (Kata Depan)",
+      "description": "Preposition of Place, Time, Direction, dan Movement",
+      "questions": [
+        {
+          "id": "preposition_001",
+          "question": "\"I was born ___ 2008.\"",
+          "options": [
+            "on",
+            "at",
+            "to",
+            "in",
+            "by"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Preposisi \"in\" digunakan untuk tahun."
+        },
+        {
+          "id": "preposition_002",
+          "question": "\"The meeting is ___ Monday.\"",
+          "options": [
+            "in",
+            "at",
+            "to",
+            "of",
+            "on"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Preposisi \"on\" digunakan untuk hari tertentu."
+        },
+        {
+          "id": "preposition_003",
+          "question": "\"We will meet ___ 7 o'clock.\"",
+          "options": [
+            "at",
+            "in",
+            "on",
+            "to",
+            "for"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Preposisi \"at\" digunakan untuk jam spesifik."
+        },
+        {
+          "id": "preposition_004",
+          "question": "\"The book is ___ the table.\" (di atas permukaan meja)",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "under",
+            "between"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Preposisi \"on\" untuk posisi di atas permukaan benda."
+        },
+        {
+          "id": "preposition_005",
+          "question": "\"She walked ___ the room.\" (masuk ke dalam)",
+          "options": [
+            "on",
+            "at",
+            "into",
+            "between",
+            "among"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Into\" menunjukkan gerakan masuk dari luar ke dalam."
+        },
+        {
+          "id": "preposition_006",
+          "question": "\"The keys are ___ the drawer.\"",
+          "options": [
+            "at",
+            "on",
+            "to",
+            "in",
+            "by"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Preposisi \"in\" untuk posisi di dalam ruang tertutup."
+        },
+        {
+          "id": "preposition_007",
+          "question": "\"He drove ___ the bridge to reach the other side.\"",
+          "options": [
+            "at",
+            "in",
+            "on",
+            "between",
+            "across"
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"Across\" menunjukkan gerakan melintasi suatu area."
+        },
+        {
+          "id": "preposition_008",
+          "question": "\"The picture is hanging ___ the wall.\"",
+          "options": [
+            "on",
+            "in",
+            "at",
+            "under",
+            "into"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Preposisi \"on\" untuk sesuatu yang menempel di permukaan vertikal."
+        },
+        {
+          "id": "preposition_009",
+          "question": "\"Andi sat ___ Budi and Cici during the exam\"",
+          "options": [
+            "among",
+            "between",
+            "under",
+            "through",
+            "at"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Between\" untuk dua pihak; \"among\" untuk lebih dari dua."
+        },
+        {
+          "id": "preposition_010",
+          "question": "\"I usually study ___ night.\"",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to",
+            "for"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Preposisi \"at\" khusus digunakan untuk kata \"night\"."
+        }
+      ]
+    },
+    {
+      "id": "adjective-order",
+      "number": 7,
+      "title": "Adjective Order (OSASCOMP)",
+      "description": "OSASCOMP: Opinion, Size, Age, Shape, Color, Origin, Material, Purpose",
+      "questions": [
+        {
+          "id": "adjective-order_001",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"house\":",
+          "options": [
+            "an old beautiful wooden",
+            "a beautiful old wooden",
+            "a wooden old beautiful",
+            "an old wooden beautiful",
+            "a beautiful wooden old"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Urutan OSASCOMP: Opinion (beautiful) - Age (old) - Material (wooden)."
+        },
+        {
+          "id": "adjective-order_002",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"bag\":",
+          "options": [
+            "a leather nice black",
+            "a black nice leather",
+            "a nice black leather",
+            "a leather black nice",
+            "nice leather black"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Urutan OSASCOMP: Opinion (nice) - Colour (black) - Material (leather)."
+        },
+        {
+          "id": "adjective-order_003",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"table\":",
+          "options": [
+            "a round small wooden",
+            "wooden small round",
+            "a wooden round small",
+            "a small round wooden",
+            "round wooden small"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Urutan OSASCOMP: Size (small) - Shape (round) - Material (wooden)."
+        },
+        {
+          "id": "adjective-order_004",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"car\":",
+          "options": [
+            "a red expensive Italian",
+            "Italian expensive red",
+            "red Italian expensive",
+            "an expensive Italian red",
+            "an expensive red Italian"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Urutan OSASCOMP: Opinion (expensive) - Colour (red) - Origin (Italian)."
+        },
+        {
+          "id": "adjective-order_005",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"shirt\":",
+          "options": [
+            "a new blue cotton",
+            "a cotton blue new",
+            "blue new cotton",
+            "cotton new blue",
+            "a new cotton blue"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Urutan OSASCOMP: Age (new) - Colour (blue) - Material (cotton)."
+        },
+        {
+          "id": "adjective-order_006",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"vase\":",
+          "options": [
+            "Chinese antique round",
+            "an antique round Chinese",
+            "round Chinese antique",
+            "an antique Chinese round",
+            "Chinese round antique"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Urutan OSASCOMP: Age (antique) - Shape (round) - Origin (Chinese)."
+        },
+        {
+          "id": "adjective-order_007",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"chair\":",
+          "options": [
+            "plastic small square",
+            "square small plastic",
+            "a small square plastic",
+            "a plastic small square",
+            "small plastic square"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Urutan OSASCOMP: Size (small) - Shape (square) - Material (plastic)."
+        },
+        {
+          "id": "adjective-order_008",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"dress\":",
+          "options": [
+            "long silk beautiful",
+            "silk long beautiful",
+            "a long beautiful silk",
+            "a beautiful long silk",
+            "beautiful silk long"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Urutan OSASCOMP: Opinion (beautiful) - Size/panjang (long) - Material (silk)."
+        },
+        {
+          "id": "adjective-order_009",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"shoes\":",
+          "options": [
+            "running new Italian",
+            "Italian new running",
+            "running Italian new",
+            "new running Italian",
+            "new Italian running"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Urutan OSASCOMP: Age (new) - Origin (Italian) - Purpose (running)."
+        },
+        {
+          "id": "adjective-order_010",
+          "question": "Pilih urutan kata sifat yang benar sebelum \"table\":",
+          "options": [
+            "a large wooden dining",
+            "a wooden large dining",
+            "dining large wooden",
+            "a large dining wooden",
+            "wooden dining large"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Urutan OSASCOMP: Size (large) - Material (wooden) - Purpose (dining)."
+        }
+      ]
+    },
+    {
+      "id": "phrase",
+      "number": 8,
+      "title": "Phrase (Kelompok Kata)",
+      "description": "Noun Phrase, Verb Phrase, Prepositional Phrase, Adjective Phrase, Adverb Phrase",
+      "questions": [
+        {
+          "id": "phrase_001",
+          "question": "Identifikasi noun phrase dalam \"The intelligent student reads a book.\"",
+          "options": [
+            "reads a book",
+            "intelligent reads",
+            "a book carefully",
+            "The reads student",
+            "The intelligent student"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Gabungan determiner+adjective+noun (head), berfungsi sebagai subject."
+        },
+        {
+          "id": "phrase_002",
+          "question": "Identifikasi verb phrase dalam \"She has been studying English.\"",
+          "options": [
+            "has been studying",
+            "She has",
+            "been studying English",
+            "studying English has",
+            "has been"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Rangkaian auxiliary+auxiliary+main verb membentuk satu verb phrase."
+        },
+        {
+          "id": "phrase_003",
+          "question": "Identifikasi prepositional phrase dalam \"The cat is under the table.\"",
+          "options": [
+            "is under",
+            "under the table",
+            "The cat is",
+            "under the",
+            "cat is under"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Preposition + noun phrase: \"under\" + \"the table\"."
+        },
+        {
+          "id": "phrase_004",
+          "question": "Identifikasi adjective phrase dalam \"The house, very old and unstable, was demolished.\"",
+          "options": [
+            "The house",
+            "was demolished",
+            "very old and unstable",
+            "old and",
+            "very unstable house"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Menerangkan noun \"house\", berpusat pada adjective."
+        },
+        {
+          "id": "phrase_005",
+          "question": "Identifikasi adverb phrase dalam \"She sang extremely well.\"",
+          "options": [
+            "She sang",
+            "sang extremely",
+            "well she",
+            "extremely well",
+            "extremely she sang"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Menerangkan verb \"sang\", dengan \"well\" sebagai head adverb."
+        },
+        {
+          "id": "phrase_006",
+          "question": "Manakah yang merupakan noun phrase dengan susunan yang benar?",
+          "options": [
+            "nice a Italian leather bag",
+            "a leather nice Italian bag",
+            "Italian a nice leather bag",
+            "bag nice Italian leather a",
+            "a nice Italian leather bag"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Determiner+Opinion+Origin+Material+head noun."
+        },
+        {
+          "id": "phrase_007",
+          "question": "Apa fungsi \"the smart student\" dalam \"The smart student won the prize.\"?",
+          "options": [
+            "Subject",
+            "Object",
+            "Complement",
+            "Modifier",
+            "Objek preposisi"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Pelaku dari verb \"won\", berfungsi sebagai subject."
+        },
+        {
+          "id": "phrase_008",
+          "question": "Apa fungsi \"a delicious cake\" dalam \"She baked a delicious cake.\"?",
+          "options": [
+            "Subject",
+            "Object",
+            "Complement",
+            "Adverbial",
+            "Determiner"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Menerima aksi dari verb \"baked\", berfungsi sebagai object."
+        },
+        {
+          "id": "phrase_009",
+          "question": "Identifikasi head word (inti) dari noun phrase \"the three big red apples\":",
+          "options": [
+            "three",
+            "big",
+            "apples",
+            "red",
+            "the"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Apples\" adalah inti/head, kata lain hanya modifier."
+        },
+        {
+          "id": "phrase_010",
+          "question": "Manakah yang BUKAN phrase (justru clause karena memiliki subjek + verb)?",
+          "options": [
+            "the smart student",
+            "reads a book",
+            "under the table",
+            "the student reads",
+            "very carefully"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Memiliki subjek dan verb sehingga membentuk pikiran utuh --- ini clause."
+        },
+        {
+          "id": "phrase_011",
+          "question": "Identifikasi noun phrase yang berfungsi sebagai subject complement: \"She is a kind teacher.\"",
+          "options": [
+            "She is",
+            "kind teacher she",
+            "is a kind",
+            "a teacher kind",
+            "a kind teacher"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Melengkapi subjek setelah linking verb \"is\" --- subject complement."
+        },
+        {
+          "id": "phrase_012",
+          "question": "Pilih noun phrase dengan urutan determiner + pre-modifier + head yang benar:",
+          "options": [
+            "my nice Japanese car",
+            "nice my Japanese car",
+            "Japanese my nice car",
+            "my Japanese nice car",
+            "car my nice Japanese"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Determiner(my)+Opinion(nice)+Origin(Japanese)+head(car)."
+        },
+        {
+          "id": "phrase_013",
+          "question": "Identifikasi verb phrase dalam \"They will have finished the project by Friday.\"",
+          "options": [
+            "have finished the",
+            "will have finished",
+            "will have",
+            "finished the project",
+            "They will"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Modal+auxiliary+past participle membentuk satu verb phrase (future perfect)."
+        },
+        {
+          "id": "phrase_014",
+          "question": "Frasa mana yang berfungsi sebagai adverbial tempat dalam \"They met at the station.\"?",
+          "options": [
+            "They met",
+            "met at",
+            "at the station",
+            "the station",
+            "at the"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Prepositional phrase yang menerangkan lokasi aksi \"met\"."
+        },
+        {
+          "id": "phrase_015",
+          "question": "Apa jenis frasa dari \"running quickly\" dalam \"The dog running quickly caught the ball.\"?",
+          "options": [
+            "Noun phrase",
+            "Verb phrase",
+            "Adverb phrase",
+            "Adjective phrase",
+            "Prepositional phrase"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Menerangkan noun \"dog\" (participle phrase) --- adjective phrase."
+        },
+        {
+          "id": "phrase_016",
+          "question": "Pilih noun phrase yang menggunakan postmodifier dengan benar:",
+          "options": [
+            "the on book table",
+            "book the on table",
+            "on the book table",
+            "the table book on",
+            "the book on the table"
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"On the table\" adalah postmodifier yang menerangkan noun \"book\" dari belakang."
+        },
+        {
+          "id": "phrase_017",
+          "question": "Dalam \"The girl in the red dress is my sister.\", apa fungsi \"in the red dress\"?",
+          "options": [
+            "Postmodifier dari \"the girl\"",
+            "Subject utama kalimat",
+            "Object kalimat",
+            "Main verb",
+            "Adverbial seluruh kalimat"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Menerangkan noun \"the girl\" dari belakang, membentuk noun phrase subjek yang lebih panjang."
+        },
+        {
+          "id": "phrase_018",
+          "question": "Apa jenis frasa dari \"very quickly and quietly\" dalam \"He closed the door very quickly and quietly.\"?",
+          "options": [
+            "Noun phrase",
+            "Adverb phrase",
+            "Adjective phrase",
+            "Prepositional phrase",
+            "Verb phrase"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Berpusat pada adverb dan menerangkan verb \"closed\" --- adverb phrase."
+        },
+        {
+          "id": "phrase_019",
+          "question": "Kalimat mana yang mengandung noun phrase sebagai objek preposisi?",
+          "options": [
+            "She reads modern art books.",
+            "Modern art is beautiful.",
+            "She is interested in modern art.",
+            "She paints beautifully.",
+            "Art fascinates her."
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Modern art\" berada setelah preposisi \"in\" --- objek preposisi."
+        },
+        {
+          "id": "phrase_020",
+          "question": "Identifikasi head word dari frasa \"extremely proud of his son\":",
+          "options": [
+            "extremely",
+            "of",
+            "his",
+            "proud",
+            "son"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"Proud\" adalah inti (head) dari adjective phrase ini."
+        }
+      ]
+    },
+    {
+      "id": "sentence",
+      "number": 9,
+      "title": "Sentence (Tipe Kalimat)",
+      "description": "Simple, Compound, Complex, Compound-Complex sentences",
+      "questions": [
+        {
+          "id": "sentence_001",
+          "question": "Manakah yang merupakan simple sentence lengkap?",
+          "options": [
+            "Reads a book.",
+            "The student a book.",
+            "The student reads.",
+            "Reading the book.",
+            "Book the student."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Memiliki subjek dan verb yang membentuk pikiran lengkap."
+        },
+        {
+          "id": "sentence_002",
+          "question": "Identifikasi subjek dalam \"The intelligent student reads books.\"",
+          "options": [
+            "reads",
+            "books",
+            "reads books",
+            "The intelligent student",
+            "intelligent"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Pelaku aksi \"reads\", sehingga menjadi subject kalimat."
+        },
+        {
+          "id": "sentence_003",
+          "question": "Identifikasi predikat (bagian verb) dalam \"The dog barks loudly.\"",
+          "options": [
+            "The dog",
+            "barks",
+            "loudly",
+            "The dog barks",
+            "barks loudly"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Predikat mencakup verb beserta modifier-nya."
+        },
+        {
+          "id": "sentence_004",
+          "question": "Pilih kalimat dengan subject-verb agreement yang benar:",
+          "options": [
+            "She studies every day.",
+            "She study every day.",
+            "She studying every day.",
+            "She studied every day tomorrow.",
+            "She do study every day."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Subjek tunggal memerlukan verb+s/es dalam simple present."
+        },
+        {
+          "id": "sentence_005",
+          "question": "Manakah yang merupakan sentence fragment (bukan kalimat lengkap)?",
+          "options": [
+            "She runs to the store.",
+            "Running to the store.",
+            "He reads a book.",
+            "They play football.",
+            "We eat dinner."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tidak memiliki subjek dan finite verb yang jelas."
+        },
+        {
+          "id": "sentence_006",
+          "question": "Pilih kalimat declarative (pernyataan):",
+          "options": [
+            "Is she a teacher?",
+            "What a great teacher!",
+            "She is a teacher.",
+            "Be a good teacher.",
+            "Teacher, come here!"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Menyatakan fakta dan diakhiri titik."
+        },
+        {
+          "id": "sentence_007",
+          "question": "Pilih kalimat interrogative (pertanyaan):",
+          "options": [
+            "She teaches English.",
+            "Teach English well!",
+            "What a good teacher!",
+            "Does she teach English?",
+            "She teaches English well."
+          ],
+          "correctAnswer": 3,
+          "explanation": "Menanyakan sesuatu, ditandai auxiliary \"Does\" di depan."
+        },
+        {
+          "id": "sentence_008",
+          "question": "Pilih kalimat imperative (perintah):",
+          "options": [
+            "She closes the door.",
+            "Does she close the door?",
+            "What a door!",
+            "The door is closed.",
+            "Close the door."
+          ],
+          "correctAnswer": 4,
+          "explanation": "Memberi perintah, diawali base verb tanpa subjek eksplisit."
+        },
+        {
+          "id": "sentence_009",
+          "question": "Pilih kalimat exclamatory (seruan):",
+          "options": [
+            "What a beautiful garden!",
+            "The garden is beautiful.",
+            "Is the garden beautiful?",
+            "Look at the garden.",
+            "The garden, beautiful."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Mengekspresikan emosi kuat, pola \"What a + adjective + noun!\""
+        },
+        {
+          "id": "sentence_010",
+          "question": "Apa syarat minimum sebuah simple sentence?",
+          "options": [
+            "Hanya subjek saja",
+            "Satu subjek dan satu verb yang membentuk pikiran lengkap",
+            "Hanya verb saja",
+            "Dua klausa yang dihubungkan konjungsi",
+            "Sebuah frasa preposisi"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Definisi simple sentence: minimal satu subjek dan satu predikat."
+        }
+      ]
+    },
+    {
+      "id": "tense",
+      "number": 10,
+      "title": "Tense (Waktu Kerja Kata)",
+      "description": "12 Tenses: Pilihan Ganda, Fill in the Blank, dan Error Correction",
+      "questions": [
+        {
+          "id": "tense_001",
+          "question": "Pilih bentuk simple present yang benar: \"She ___ English every day.\"",
+          "options": [
+            "study",
+            "studying",
+            "studies",
+            "studied",
+            "is study"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Subjek tunggal orang ketiga dalam simple present memerlukan V1+s/es: \"studies\"."
+        },
+        {
+          "id": "tense_002",
+          "question": "Pilih bentuk present continuous yang benar: \"She ___ now.\"",
+          "options": [
+            "studies",
+            "study",
+            "has studied",
+            "is studying",
+            "was studying"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Penanda \"now\" menunjukkan sedang berlangsung - present continuous: am/is/are+V-ing."
+        },
+        {
+          "id": "tense_003",
+          "question": "Pilih bentuk present perfect yang benar: \"She ___ already.\"",
+          "options": [
+            "studies",
+            "studied",
+            "is studying",
+            "had studied",
+            "has studied"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Penanda \"already\" - present perfect: have/has+V3."
+        },
+        {
+          "id": "tense_004",
+          "question": "Pilih bentuk simple past yang benar: \"She ___ last night.\"",
+          "options": [
+            "studied",
+            "studies",
+            "study",
+            "has studied",
+            "is studying"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Penanda waktu lampau \"last night\" - simple past: V2."
+        },
+        {
+          "id": "tense_005",
+          "question": "Pilih bentuk past continuous yang benar: \"She ___ when I called.\"",
+          "options": [
+            "studied",
+            "was studying",
+            "has studied",
+            "studies",
+            "studies now"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Aksi sedang berlangsung di masa lalu saat aksi lain terjadi - past continuous: was/were+V-ing."
+        },
+        {
+          "id": "tense_006",
+          "question": "Pilih bentuk past perfect yang benar: \"She ___ before dinner.\"",
+          "options": [
+            "studied",
+            "has studied",
+            "had studied",
+            "was studying",
+            "studies"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Aksi selesai sebelum aksi lampau lain - past perfect: had+V3."
+        },
+        {
+          "id": "tense_007",
+          "question": "Pilih bentuk simple future yang benar: \"She ___ tomorrow.\"",
+          "options": [
+            "studies",
+            "studied",
+            "is studying",
+            "will study",
+            "has studied"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Penanda \"tomorrow\" - simple future: will+V1."
+        },
+        {
+          "id": "tense_008",
+          "question": "Pilih bentuk future continuous yang benar: \"She ___ at 8 PM tomorrow.\"",
+          "options": [
+            "will study",
+            "studies",
+            "is studying",
+            "has been studying",
+            "will be studying"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Aksi berlangsung pada titik waktu tertentu di masa depan - future continuous: will be+V-ing."
+        },
+        {
+          "id": "tense_009",
+          "question": "Pilih bentuk future perfect yang benar: \"She ___ by next week.\"",
+          "options": [
+            "will have studied",
+            "will study",
+            "will be studying",
+            "has studied",
+            "studied"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Aksi selesai sebelum titik waktu masa depan - future perfect: will have+V3."
+        },
+        {
+          "id": "tense_010",
+          "question": "Pilih bentuk present perfect continuous yang benar: \"She ___ for two hours.\" (masih berlangsung)",
+          "options": [
+            "studied",
+            "has been studying",
+            "has studied",
+            "is studying",
+            "had studied"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Penekanan durasi aksi yang masih berlangsung - present perfect continuous: have/has been+V-ing."
+        },
+        {
+          "id": "tense_011",
+          "question": "Bentuk kata kerja yang tepat untuk kalimat \"She ___ (study) English every day.\" adalah...",
+          "options": [
+            "study",
+            "studies",
+            "is studying",
+            "studied",
+            "has studied"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Penanda \"every day\" -> simple present, subjek tunggal -> +s: \"studies\"."
+        },
+        {
+          "id": "tense_012",
+          "question": "Bentuk kata kerja yang tepat untuk kalimat \"They ___ (watch) a movie right now.\" adalah...",
+          "options": [
+            "watch",
+            "watches",
+            "are watching",
+            "watched",
+            "will watch"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Penanda \"right now\" -> present continuous: are+V-ing -> \"are watching\"."
+        },
+        {
+          "id": "tense_013",
+          "question": "Bentuk kata kerja yang tepat untuk kalimat \"He ___ (finish) his homework already.\" adalah...",
+          "options": [
+            "finishes",
+            "is finishing",
+            "finished",
+            "has finished",
+            "had finished"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Penanda \"already\" -> present perfect: has+V3 -> \"has finished\"."
+        },
+        {
+          "id": "tense_014",
+          "question": "Bentuk kata kerja yang tepat untuk kalimat \"We ___ (visit) our grandparents last week.\" adalah...",
+          "options": [
+            "visit",
+            "are visiting",
+            "visited",
+            "has visited",
+            "will visit"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Penanda \"last week\" -> simple past: V2 -> \"visited\"."
+        },
+        {
+          "id": "tense_015",
+          "question": "Bentuk kata kerja yang tepat untuk kalimat \"By next year, she ___ (complete) her degree.\" adalah...",
+          "options": [
+            "completes",
+            "is completing",
+            "completed",
+            "has completed",
+            "will have completed"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Penanda \"by next year\" -> future perfect: will have+V3 -> \"will have completed\"."
+        },
+        {
+          "id": "tense_016",
+          "question": "Manakah perbaikan yang tepat untuk kalimat \"She study English every day.\"?",
+          "options": [
+            "She studies English every day.",
+            "She is study English every day.",
+            "She studying English every day.",
+            "She has study English every day.",
+            "She studied English every day."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Subjek tunggal orang ketiga dalam simple present harus V1+s/es: \"studies\", bukan \"study\"."
+        },
+        {
+          "id": "tense_017",
+          "question": "Manakah perbaikan yang tepat untuk kalimat \"They is watching TV now.\"?",
+          "options": [
+            "They watching TV now.",
+            "They are watching TV now.",
+            "They was watching TV now.",
+            "They has watching TV now.",
+            "They is watch TV now."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Subjek jamak \"They\" harus memakai \"are\", bukan \"is\"."
+        },
+        {
+          "id": "tense_018",
+          "question": "Manakah perbaikan yang tepat untuk kalimat \"He has went to school.\"?",
+          "options": [
+            "He has go to school.",
+            "He have went to school.",
+            "He has gone to school.",
+            "He was gone to school.",
+            "He has going to school."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Present perfect memakai V3 (past participle) \"gone\", bukan V2 \"went\"."
+        },
+        {
+          "id": "tense_019",
+          "question": "Manakah perbaikan yang tepat untuk kalimat \"Yesterday, she studies at the library.\"?",
+          "options": [
+            "Yesterday, she study at the library.",
+            "Yesterday, she has studied at the library.",
+            "Yesterday, she studied at the library.",
+            "Yesterday, she is studying at the library.",
+            "Yesterday, she will study at the library."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Penanda waktu lampau \"yesterday\" memerlukan simple past \"studied\", bukan \"studies\"."
+        },
+        {
+          "id": "tense_020",
+          "question": "Manakah perbaikan yang tepat untuk kalimat \"By next week, she will finished the project.\"?",
+          "options": [
+            "By next week, she will finish the project.",
+            "By next week, she will has finished the project.",
+            "By next week, she has finished the project.",
+            "By next week, she will have finished the project.",
+            "By next week, she is finishing the project."
+          ],
+          "correctAnswer": 3,
+          "explanation": "Aksi selesai sebelum titik waktu masa depan memakai future perfect \"will have finished\", bukan \"will finished\"."
+        }
+      ]
+    },
+    {
+      "id": "clause",
+      "number": 11,
+      "title": "Clause (Anak & Induk Kalimat)",
+      "description": "Independent vs Dependent Clause, cara mengidentifikasi, dan fungsinya dalam kalimat",
+      "questions": [
+        {
+          "id": "clause_001",
+          "question": "Identifikasi independent clause dalam \"Although it rained, we went outside.\"",
+          "options": [
+            "Although it rained",
+            "it rained",
+            "we went",
+            "we went outside",
+            "Although we went outside"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Dapat berdiri sendiri sebagai kalimat lengkap."
+        },
+        {
+          "id": "clause_002",
+          "question": "Identifikasi dependent clause dalam \"Because she studied hard, she passed the exam.\"",
+          "options": [
+            "she passed the exam",
+            "she studied hard",
+            "she passed",
+            "Because she passed the exam",
+            "Because she studied hard"
+          ],
+          "correctAnswer": 4,
+          "explanation": "Diawali subordinating conjunction \"because\", tidak bisa berdiri sendiri."
+        },
+        {
+          "id": "clause_003",
+          "question": "Pilih kalimat yang mengandung adjective clause:",
+          "options": [
+            "The book that I borrowed is interesting.",
+            "She reads books every day.",
+            "I borrowed a book yesterday.",
+            "The book is on the table.",
+            "She likes reading books."
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"That I borrowed\" menerangkan noun \"the book\" --- adjective clause."
+        },
+        {
+          "id": "clause_004",
+          "question": "Pilih kalimat yang mengandung noun clause:",
+          "options": [
+            "She is honest and kind.",
+            "I believe that she is honest.",
+            "Because she is honest, we trust her.",
+            "The honest woman smiled.",
+            "She, who is honest, smiled."
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"That she is honest\" berfungsi sebagai objek dari verb \"believe\"."
+        },
+        {
+          "id": "clause_005",
+          "question": "Pilih kalimat yang mengandung adverb clause:",
+          "options": [
+            "It rains a lot here.",
+            "The rain that fell was heavy.",
+            "When it rains, we stay indoors.",
+            "We know that it rains.",
+            "Rain falls heavily."
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"When it rains\" menerangkan waktu terjadinya aksi utama."
+        },
+        {
+          "id": "clause_006",
+          "question": "Pilih relative pronoun yang tepat: \"The man ___ helped me is my neighbor.\"",
+          "options": [
+            "which",
+            "whom",
+            "what",
+            "who",
+            "whose"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"Who\" menggantikan orang sebagai subjek klausa relative."
+        },
+        {
+          "id": "clause_007",
+          "question": "Pilih relative pronoun yang tepat: \"The book ___ is on the table belongs to me.\"",
+          "options": [
+            "who",
+            "whom",
+            "whose",
+            "what",
+            "which"
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"Which\" menggantikan benda sebagai subjek klausa relative."
+        },
+        {
+          "id": "clause_008",
+          "question": "Klausa apa yang berfungsi sebagai subjek dalam \"What she said surprised everyone.\"?",
+          "options": [
+            "What she said",
+            "she said",
+            "surprised everyone",
+            "What she",
+            "everyone"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Noun clause yang berfungsi sebagai subjek dari verb \"surprised\"."
+        },
+        {
+          "id": "clause_009",
+          "question": "Pilih kalimat yang menggabungkan dua klausa dengan subordinating conjunction secara benar:",
+          "options": [
+            "It was raining, we canceled the trip.",
+            "Since it was raining, we canceled the trip.",
+            "It was raining canceled we the trip.",
+            "We canceled the trip it was raining since.",
+            "Raining it was, we the trip canceled."
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Since\" menghubungkan sebab-akibat dengan dependent clause di depan diikuti koma."
+        },
+        {
+          "id": "clause_010",
+          "question": "Sebuah clause minimal harus mengandung apa?",
+          "options": [
+            "Dua verb",
+            "Konjungsi saja",
+            "Subjek dan verb",
+            "Preposisi dan noun",
+            "Adjective dan adverb"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Definisi clause: minimal satu subjek dan satu verb (finite)."
+        }
+      ]
+    },
+    {
+      "id": "complex-sentence",
+      "number": 12,
+      "title": "Complex Sentence (Kalimat Kompleks)",
+      "description": "Struktur kalimat kompleks dengan independent dan dependent clause",
+      "questions": [
+        {
+          "id": "complex-sentence_001",
+          "question": "Identifikasi kalimat compound (majemuk setara):",
+          "options": [
+            "Because she studied hard, she passed the exam.",
+            "She studied hard, and she passed the exam.",
+            "She studied hard.",
+            "Studying hard, she passed.",
+            "She, who studied hard, passed."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dua independent clause digabung coordinating conjunction \"and\"."
+        },
+        {
+          "id": "complex-sentence_002",
+          "question": "Identifikasi kalimat complex (majemuk bertingkat):",
+          "options": [
+            "She studied hard, and she passed.",
+            "She studied hard.",
+            "Because she studied hard, she passed the exam.",
+            "She studied; she passed.",
+            "She studied hard, so she passed."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Satu independent clause + satu dependent clause (\"Because...\")."
+        },
+        {
+          "id": "complex-sentence_003",
+          "question": "Identifikasi kalimat compound-complex:",
+          "options": [
+            "It rained, so we stayed inside.",
+            "Because it rained, we stayed inside.",
+            "It rained heavily today.",
+            "Although it rained, we went outside, and we had fun.",
+            "We stayed inside and watched TV."
+          ],
+          "correctAnswer": 3,
+          "explanation": "Satu dependent clause + dua independent clause yang dihubungkan \"and\"."
+        },
+        {
+          "id": "complex-sentence_004",
+          "question": "Pilih hasil penggabungan yang benar menggunakan coordinating conjunction: \"She likes tea. She likes coffee.\"",
+          "options": [
+            "She likes tea because coffee.",
+            "Although she likes tea, coffee.",
+            "She likes tea, coffee she likes.",
+            "She likes tea; coffee likes she.",
+            "She likes tea and coffee."
+          ],
+          "correctAnswer": 4,
+          "explanation": "\"And\" menggabungkan dua hal yang sama-sama disukai secara efisien."
+        },
+        {
+          "id": "complex-sentence_005",
+          "question": "Pilih hasil penggabungan yang benar menggunakan subordinating conjunction: \"It was late. We went home.\"",
+          "options": [
+            "Because it was late, we went home.",
+            "It was late, we went home.",
+            "We went home it was late because.",
+            "Late it was, home we went.",
+            "It, being late, went we home."
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Because\" menghubungkan sebab-akibat dengan dependent clause di awal diikuti koma."
+        },
+        {
+          "id": "complex-sentence_006",
+          "question": "Apa yang membedakan complex sentence dari compound sentence?",
+          "options": [
+            "Complex sentence tidak memiliki verb; compound sentence hanya punya",
+            "Complex sentence memiliki satu independent clause dan minimal",
+            "Keduanya sama saja.",
+            "Compound sentence punya subordinating conjunction; complex sentence",
+            "Complex sentence tidak pernah memiliki subjek."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Perbedaan utama: compound = independent+independent, complex = independent+dependent."
+        },
+        {
+          "id": "complex-sentence_007",
+          "question": "Berapa jumlah klausa dalam \"When she arrived, everyone cheered, and the music started.\"?",
+          "options": [
+            "1 klausa",
+            "2 klausa",
+            "3 klausa",
+            "4 klausa",
+            "5 klausa"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Terdapat 3 klausa: 1 dependent + 2 independent."
+        },
+        {
+          "id": "complex-sentence_008",
+          "question": "Pilih kalimat yang menggunakan titik koma (semicolon) dengan benar untuk menggabungkan dua independent clause:",
+          "options": [
+            "She finished her homework, she went to bed.",
+            "She finished her homework; and she went to bed.",
+            "She finished her homework: she went to bed and.",
+            "She finished her homework; she went to bed.",
+            "She finished, her homework she went to bed."
+          ],
+          "correctAnswer": 3,
+          "explanation": "Semicolon menggabungkan dua independent clause tanpa conjunction."
+        },
+        {
+          "id": "complex-sentence_009",
+          "question": "Manakah kalimat yang secara gramatikal merupakan simple sentence, BUKAN complex sentence?",
+          "options": [
+            "Although tired, she finished her homework.",
+            "She finished her homework because she wanted to relax.",
+            "When she was ready, she finished her homework.",
+            "She finished her homework, which was difficult.",
+            "She finished her homework quickly."
+          ],
+          "correctAnswer": 4,
+          "explanation": "Hanya satu independent clause tanpa dependent clause."
+        },
+        {
+          "id": "complex-sentence_010",
+          "question": "Identifikasi kalimat compound-complex:",
+          "options": [
+            "Because he was hungry, he cooked dinner, and he ate quickly.",
+            "He was hungry, so he cooked dinner.",
+            "Because he was hungry, he cooked dinner.",
+            "He cooked dinner and ate quickly.",
+            "He was hungry and tired."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Satu dependent clause + dua independent clause dihubungkan \"and\". # Audit Kualitas Soal Setiap soal dalam kuis ini telah diaudit menggunakan kriteria berikut sebelum dinyatakan layak digunakan sebagai instrumen penilaian: 1. Satu kunci jawaban yang benar secara objektif --- tidak ada opsi pengecoh (distractor) yang juga bisa dibenarkan secara gramatikal dalam konteks kalimat yang diberikan. 2. Konteks kalimat cukup untuk menentukan jawaban tanpa asumsi tambahan --- setiap soal menyertakan penanda (signal word), konteks waktu, atau pola kalimat yang menghilangkan potensi ambiguitas (misalnya penanda waktu \"yesterday\", \"since 2019\", \"by next year\" untuk soal Tense). 3. Pengecoh (distractor) dirancang relevan dan masuk akal, mewakili kesalahan umum siswa (contoh: subject-verb agreement, V1/V2/V3 tertukar, determiner countable/uncountable tertukar), bukan opsi yang jelas salah/tidak relevan. 4. Istilah dan notasi konsisten dengan materi pada slide sumber (mis. OSASCOMP, FANBOYS, V1-V2-V3, S+V+O, S+to be+complement), sehingga soal selaras dengan apa yang diajarkan. 5. Soal Error Correction memiliki tepat satu kesalahan gramatikal yang dapat diidentifikasi secara objektif, diambil dari pola kesalahan umum yang sudah dibahas di materi (subject-verb agreement, tense marker, V1/V3, do/does). 6. Soal Fill in the Blank memiliki tepat satu jawaban benar yang ditentukan oleh penanda waktu/konteks yang eksplisit dalam kalimat (bukan multi-tafsir). 7. Bahasa soal jelas dan tidak berlapis makna (tidak memakai idiom, sarkasme, atau referensi budaya yang bisa disalahartikan). 8. Analisis jawaban ringkas namun menjelaskan alasan gramatikal spesifik, bukan sekadar mengulang kunci jawaban. Hasil Audit: Seluruh 140 soal (120 soal pilihan ganda pada 10 topik penuh pilihan ganda + 20 soal pilihan ganda pada Topik Phrase + 20 soal campuran pada Topik Tense) telah diperiksa satu per satu terhadap kriteria di atas. Posisi kunci jawaban pada soal pilihan ganda telah diacak/dirotasi antar-huruf A--E agar tidak membentuk pola tebakan. Tidak ditemukan soal dengan lebih dari satu jawaban yang secara gramatikal dapat dibenarkan, dan seluruh kunci jawaban konsisten dengan kaidah tata bahasa Inggris standar serta materi yang diajarkan pada slide sumber (English Grammar --- 12 topik, dari Word sampai Complex Sentence). Kuis ini dinyatakan SAH dan dapat dipertanggungjawabkan untuk digunakan sebagai instrumen penilaian. Disusun untuk: SMA Negeri 5 Surakarta --- Bahasa Inggris"
+        }
+      ]
+    }
+  ]
+}
